@@ -70,10 +70,10 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÓDULO 1.1 · TRILHA 1</span>
       <h1 class="text-2xl sm:text-4xl font-bold mb-4 leading-tight">🛠️ Visão geral da skill</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">Conteúdo do zip:</p>
+      <p class="text-lg text-neutral-400 max-w-3xl">O efeito viral de "scroll 3D" **não** é Three.js. É uma **varredura de sequência de imagens em canvas**:</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
-            <div class="text-xl font-bold text-emerald-400">0</div>
+            <div class="text-xl font-bold text-emerald-400">1</div>
             <div class="text-xs text-neutral-400">Tópicos</div>
           </div>
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
@@ -94,7 +94,7 @@
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <article class="leading-relaxed">
-<p class="text-neutral-300 mb-4 leading-relaxed">Conteúdo do zip: scroll-cinematic/ scroll-cinematic/scripts/ scroll-cinematic/scripts/ensure-ffmpeg.sh scroll-cinematic/scripts/compress-frames.sh scroll-cinematic/scripts/extract-frames.sh scroll-cinematic/SKILL.md scroll-cinematic/templates/ scroll-cinematic/templates/Launch Demo.command scroll-cinematic/templates/index.html scroll-cinematic/templates/styles.css scroll-cinematic/templates/CinematicReveal.tsx scroll-cinematic/templates/scroll-cinematic.js</p><p class="text-neutral-300 mb-4 leading-relaxed">--- scroll-cinematic/SKILL.md --- --- name: scroll-cinematic description: Crie um site de "scroll 3D" de qualquer tipo a partir de UM único prompt — lançamento de produto, portfólio, agência, serviços de construção/manutenção, restaurante, imóveis, marca pessoal, evento, aplicativo, etc. Gera um visual hero cinematográfico de alto padrão + clipes (órbita 360°, passagem voadora, revelação, explosão, parallax) adequados ao assunto do site com o Higgsfield MCP, divide-os em uma sequência de frames de canvas controlada por scroll com ffmpeg, constrói um site multi-seção com identidade visual (scroll suave com Lenis + revelações por scroll) e o inicia no localhost. Use quando o usuário pedir um site de "scroll 3D", hero/reveal dirigido por scroll, uma landing page cinematográfica, um site de scroll no estilo Apple/Awwwards, ou "construa um site como X" — para um produto OU um serviço, pessoa, local ou marca. Palavras-gatilho: 3D scroll, animação de scroll, hero cinematográfico, fly-through, turntable, site de scroll, landing page, site de portfólio, site de agência, site Higgsfield.</p><hr class="border-dark-600 my-8"><p class="text-neutral-300 mb-4 leading-relaxed"># Scroll-Cinematic — sites de produto 3D com um único prompt</p>
+<h1 class="text-2xl md:text-3xl font-extrabold text-white mt-2 mb-5">Scroll-Cinematic — sites de produto 3D com um único prompt</h1><h2 class="text-xl font-bold text-white mt-7 mb-3 flex items-center gap-2">O que isso realmente é (leia primeiro)</h2><p class="text-neutral-300 mb-4 leading-relaxed">O efeito viral de "scroll 3D" <strong>não</strong> é Three.js. É uma <strong>varredura de sequência de imagens em canvas</strong>: um clipe cinematográfico curto é exportado para ~180 JPGs numerados, todos pré-carregados, e o frame desenhado em um <code class="px-1.5 py-0.5 rounded bg-dark-700 text-primary text-[0.85em] font-mono">&lt;canvas&gt;</code> é escolhido pelo progresso do scroll. Rolar para frente/para trás reproduz o clipe. Adicione scroll suave com Lenis + texto de sobreposição sincronizado com o scroll e ele parece 3D premium. O "3D" vem inteiramente do vídeo de origem — que geramos com o Higgsfield.</p><p class="text-neutral-300 mb-4 leading-relaxed">Stack: <strong>HTML + CSS + JS + Lenis</strong> puros (zero build, roda em qualquer servidor estático).</p>
     </article>
 
     <div class="mt-12 pt-8 border-t border-dark-600 flex flex-col sm:flex-row gap-4">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Módulo 1.2: O que isso realmente é (leia primeiro) | Sites 3D e Cinematográficos</title>
+  <title>Módulo 1.2: Pré-requisitos e Etapa 0 | Sites 3D e Cinematográficos</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }
@@ -69,8 +69,8 @@
   <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÓDULO 1.2 · TRILHA 1</span>
-      <h1 class="text-2xl sm:text-4xl font-bold mb-4 leading-tight">🛠️ O que isso realmente é (leia primeiro)</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">O efeito viral de "scroll 3D" **não** é Three.js. É uma **varredura de sequência de imagens em canvas**:</p>
+      <h1 class="text-2xl sm:text-4xl font-bold mb-4 leading-tight">🛠️ Pré-requisitos e Etapa 0</h1>
+      <p class="text-lg text-neutral-400 max-w-3xl">- **Higgsfield MCP** conectado + créditos (~$1–2 / site). Esta é a única coisa que o usuário deve configurar.</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
             <div class="text-xl font-bold text-emerald-400">1</div>
@@ -94,7 +94,7 @@
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <article class="leading-relaxed">
-<h2 class="font-bold text-xl sm:text-2xl mt-8 mb-3 text-white">O que isso realmente é (leia primeiro)</h2><p class="text-neutral-300 mb-4 leading-relaxed">O efeito viral de "scroll 3D" <strong>não</strong> é Three.js. É uma <strong>varredura de sequência de imagens em canvas</strong>: um clipe cinematográfico curto é exportado para ~180 JPGs numerados, todos pré-carregados, e o frame desenhado em um <code class="px-1.5 py-0.5 rounded bg-dark-700 text-primary text-[0.85em] font-mono">&lt;canvas&gt;</code> é escolhido pelo progresso do scroll. Rolar para frente/para trás reproduz o clipe. Adicione scroll suave com Lenis + texto de sobreposição sincronizado com o scroll e ele parece 3D premium. O "3D" vem inteiramente do vídeo de origem — que geramos com o Higgsfield.</p><p class="text-neutral-300 mb-4 leading-relaxed">Stack: <strong>HTML + CSS + JS + Lenis</strong> puros (zero build, roda em qualquer servidor estático).</p>
+<h2 class="text-xl font-bold text-white mt-7 mb-3 flex items-center gap-2">Pré-requisitos</h2><ul class="list-disc pl-6 space-y-1.5 my-4 text-neutral-300 leading-relaxed marker:text-neutral-500"><li><strong>Higgsfield MCP</strong> conectado + créditos (~$1–2 / site). Esta é a única coisa que o usuário deve configurar.</li><li><strong>ffmpeg</strong> — NÃO peça ao usuário para instalá-lo. A Etapa 0 abaixo instala automaticamente (sem Homebrew).</li><li>Esta habilidade instalada em <code class="px-1.5 py-0.5 rounded bg-dark-700 text-primary text-[0.85em] font-mono">~/.claude/skills/scroll-cinematic/</code>.</li></ul><h3 class="text-lg font-bold text-neutral-100 mt-6 mb-3">Etapa 0 — Garantir ffmpeg (execute primeiro, sempre)</h3><p class="text-neutral-300 mb-4 leading-relaxed">Execute <code class="px-1.5 py-0.5 rounded bg-dark-700 text-primary text-[0.85em] font-mono">bash ~/.claude/skills/scroll-cinematic/scripts/ensure-ffmpeg.sh</code>. Ele usa o ffmpeg do sistema se presente, caso contrário baixa um binário estático para <code class="px-1.5 py-0.5 rounded bg-dark-700 text-primary text-[0.85em] font-mono">/tmp/ffmpeg-bin/ffmpeg</code> (macOS/Linux, sem Homebrew). Os scripts de extração/compressão já usam esse caminho como alternativa. Nunca bloqueie a construção pelo ffmpeg.</p>
     </article>
 
     <div class="mt-12 pt-8 border-t border-dark-600 flex flex-col sm:flex-row gap-4">
