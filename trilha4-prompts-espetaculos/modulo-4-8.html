@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 4.8: PROMPT 07 · A REVELAÇÃO DA LUZ · NOIR, um piano revelado pela luz. | Sites 3D e Cinematográficos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .dark body { background-color: #111827; }
+    html:not(.dark) body { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); }
+    html:not(.dark) .bg-dark-900 { background-color: #ffffff; }
+    html:not(.dark) .bg-dark-800 { background-color: #f9fafb; }
+    html:not(.dark) .bg-dark-800/50 { background-color: rgba(249,250,251,.7); }
+    html:not(.dark) .bg-dark-700 { background-color: #f3f4f6; }
+    html:not(.dark) .text-neutral-100 { color: #111827; }
+    html:not(.dark) .text-neutral-200 { color: #1f2937; }
+    html:not(.dark) .text-neutral-300 { color: #4b5563; }
+    html:not(.dark) .text-neutral-400 { color: #6b7280; }
+    html:not(.dark) .text-neutral-500 { color: #9ca3af; }
+    html:not(.dark) .border-dark-600 { border-color: #d1d5db; }
+    html:not(.dark) .border-dark-700 { border-color: #e5e7eb; }
+    html:not(.dark) .text-white { color: #111827; }
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-14">
+        <div class="flex items-center space-x-4">
+          <a href="../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
+            <span class="text-2xl">🎬</span>
+            <span class="font-bold text-lg hidden sm:inline">Sites 3D</span>
+          </a>
+          <span class="text-neutral-600 hidden sm:inline">|</span>
+          <a href="../index.html" class="text-neutral-400 hover:text-yellow-300 text-sm font-medium hidden md:inline">← Times de IA</a>
+        </div>
+        <div class="flex items-center space-x-1 sm:space-x-2">
+          <a href="../trilha1-skill-scroll/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Skill</span></a>
+          <a href="../trilha2-prompts-sites/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Pack I</span></a>
+          <a href="../trilha3-guia-prompting/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Guia</span></a>
+          <a href="../trilha4-prompts-espetaculos/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Pack II</span></a>
+          <a href="../trilha5-seedance/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Seedance</span></a>
+          <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2" aria-label="Alternar tema">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex items-center space-x-2 text-sm text-neutral-400">
+      <a href="../index.html" class="hover:text-amber-400">Início</a>
+      <span>/</span>
+      <a href="index.html" class="hover:text-amber-400">Trilha 4</a>
+      <span>/</span>
+      <span class="text-amber-400">Módulo 4.8</span>
+    </div>
+  </nav>
+
+  <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÓDULO 4.8 · TRILHA 4</span>
+      <h1 class="text-2xl sm:text-4xl font-bold mb-4 leading-tight">⚡ PROMPT 07 · A REVELAÇÃO DA LUZ · NOIR, um piano revelado pela luz.</h1>
+      <p class="text-lg text-neutral-400 max-w-3xl">Nada explode e nada se move, exceto a luz: um único feixe varre a escuridão e o visitante rola a página para dar existência a um piano de cauda, curva por curva.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">0</div>
+            <div class="text-xs text-neutral-400">Tópicos</div>
+          </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">6 min</div>
+            <div class="text-xs text-neutral-400">Leitura</div>
+          </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">Pack II</div>
+            <div class="text-xs text-neutral-400">Trilha</div>
+          </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">Prompts</div>
+            <div class="text-xs text-neutral-400">Formato</div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="leading-relaxed">
+<p class="text-neutral-300 mb-4 leading-relaxed">Nada explode e nada se move, exceto a luz: um único feixe varre a escuridão e o visitante rola a página para dar existência a um piano de cauda, curva por curva.</p><p class="text-neutral-300 mb-4 leading-relaxed">You are building a one-page, award-grade "scroll cinematic" website. Work autonomously end to end: generate assets with the Higgsfield connector, then build and run the site with your coding agent. No plans, no placeholders.</p><p class="text-neutral-300 mb-4 leading-relaxed">THE PRODUCT (fictional maker): NOIR Concert Grand, a nine foot piano in hand-polished black lacquer. Tagline: "Heard before seen." The concept is LIGHT AS THE SCROLL: the page opens in true darkness, and a single warm beam sweeps across the instrument as the visitor scrolls, revealing it section by section, reflections rolling over the lacquer. Only what the light touches exists. At the end the lid rises and the hall lights ignite.</p><p class="text-neutral-300 mb-4 leading-relaxed">THE TECHNIQUE (follow exactly): The 3D scroll effect is NOT Three.js. It is a canvas image-sequence scrub: video clips split into frames, scroll position drives which frame paints onto a full-viewport canvas.</p><p class="text-neutral-300 mb-4 leading-relaxed">ASSETS (Higgsfield connector): 1. ONE 16:9 anchor image: "A concert grand piano in hand-polished black lacquer standing in total darkness, a single warm spotlight beam grazing only the curved rim, the rest of the instrument dissolving into black, extreme contrast chiaroscuro, photorealistic, no text, no watermark." Best image model in the catalog. 2. With the anchor as image reference on every clip, three 10-second 1080p 16:9 image-to-video clips: CLIP A "the sweep": everything is black; one warm light beam travels slowly across the piano, revealing the rim curve, then the keys, then the music desk, reflections sliding across the lacquer, most of the frame always in darkness. CLIP B "the opening": the light widens as the lid rises in slow motion, the golden frame and strings inside catching warm glints, hammers lifting in a slow wave like something breathing. CLIP C "the strike": extreme macro in low light, one felt hammer rising and striking a copper-wound string, the string blurring into vibration, dust motes drifting through the beam, one ivory key sinking. 3. Download the MP4s.</p><p class="text-neutral-300 mb-4 leading-relaxed">FRAMES: ffmpeg, 150 frames per clip, 1600px wide, JPEG quality 3, frames/sweep/frame_0001.jpg naming. Confirm files exist first.</p><p class="text-neutral-300 mb-4 leading-relaxed">THE SITE (plain HTML/CSS/JS, Lenis via CDN, preloader as a thin warm line with percentage in the dark, pinned 100vh scrub chapters with lerp smoothing): 1. HERO: the sweep scrubs while "NOIR" emerges letter by letter as if the beam is finding the type too, overline "CONCERT GRAND. HEARD BEFORE SEEN." 2. THE OPENING: clip B scrubs; callouts fade in with hairline tungsten leader lines: 9 FEET of lacquer. 12,000 PARTS. 243 STRINGS at 20 tons of tension. VOICED for 200 hours. 3. THE STRIKE: clip C scrubs through the hammer hitting the string. 4. THE CREED: three short lines on silence and the first note, one per scroll step. 5. SPECS: minimal two-column grid, hairline dividers. 6. CTA: "Request an audition", email field, small print. Art direction: true black #060606, warm tungsten accent #E8C28A, bone text #EDE7DA, no other color anywhere; giant serif display plus tracked-out caps; the page itself stays mostly dark, type appears only where content lives. Mobile and reduced motion: looping MP4 fallback. Performance: requestAnimationFrame, repaint only on frame change, 60fps.</p><p class="text-neutral-300 mb-4 leading-relaxed">VERIFY: loader unlocks at 100 percent, the sweep reveals the piano only where light passes, the lid opening reads clearly, the hammer strike lands in macro, no console errors. Then give me the live URL. AS REGRAS QUE FAZEM ISSO FUNCIONAR</p><p class="text-neutral-300 mb-4 leading-relaxed">Mude o sujeito, nunca o sistema.</p><p class="text-neutral-300 mb-4 leading-relaxed">+ A fórmula: um sujeito mais um momento impossível: explosão, uma caminhada pelo espaço, nascimento em estado fundido, tempo congelado, floração, descida ou luz. Troque o sujeito, escolha o momento, mantenha todos os outros passos idênticos.</p><p class="text-neutral-300 mb-4 leading-relaxed">+ O reverso é magia gratuita. Todo clipe de transformação funciona em ambas as direções: explodir e reorganizar, florescer e fechar, afundar e emergir. Um clipe, dois momentos, zero créditos extras.</p><p class="text-neutral-300 mb-4 leading-relaxed">+ Mantenha Sites ON. A URL hospedada ao vivo é o objetivo; os arquivos locais são o plano B.</p><p class="text-neutral-300 mb-4 leading-relaxed">+ Orce cerca de 100 créditos Higgsfield por site, aproximadamente cinco dólares. Uma imagem âncora fixa o produto, três clipes sustentam todo o filme.</p><p class="text-neutral-300 mb-4 leading-relaxed">+ Se parecer com um template comum, use as linhas de resgate do início deste pacote. O scrub é o produto.</p><p class="text-neutral-300 mb-4 leading-relaxed">A MELHORIA</p><p class="text-neutral-300 mb-4 leading-relaxed">Este pacote dirige o assistente manualmente. Membros fazem isso em um único comando. sites de ponta a ponta a partir de um único prompt: ativos, quadros, código, lançamento. Ele é entregue junto com 200+ skills, os funcionários de IA (JARVIS, TARS, SPARK), todos os guias de instalação e cada lançamento futuro no momento em que chegar. As skills não estão à venda em lugar nenhum. Membros recebem tudo.</p><p class="text-neutral-300 mb-4 leading-relaxed">Construído com seu assistente de código · Publique sua construção na comunidade, o melhor site será destaque.</p>
+    </article>
+
+    <div class="mt-12 pt-8 border-t border-dark-600 flex flex-col sm:flex-row gap-4">
+      <a href="modulo-4-7.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Módulo 4.7</a>
+      <a href="../index.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors">Próxima Trilha →</a>
+    </div>
+  </main>
+  <footer class="border-t border-dark-600 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
+      <p>Sites 3D e Cinematográficos · Material educacional | <a href="https://inema.club" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p>
+    </div>
+  </footer>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+    const htmlEl = document.documentElement;
+    if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !htmlEl.classList.contains('dark'))) {
+      darkIcon.classList.remove('hidden'); htmlEl.classList.remove('dark');
+    } else { lightIcon.classList.remove('hidden'); }
+    themeToggle.addEventListener('click', () => {
+      darkIcon.classList.toggle('hidden'); lightIcon.classList.toggle('hidden');
+      htmlEl.classList.toggle('dark');
+      localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

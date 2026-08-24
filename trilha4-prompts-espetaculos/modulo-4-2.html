@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 4.2: PROMPT 01 · A BALEIA · OBSCURA, a câmera mítica. | Sites 3D e Cinematográficos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .dark body { background-color: #111827; }
+    html:not(.dark) body { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); }
+    html:not(.dark) .bg-dark-900 { background-color: #ffffff; }
+    html:not(.dark) .bg-dark-800 { background-color: #f9fafb; }
+    html:not(.dark) .bg-dark-800/50 { background-color: rgba(249,250,251,.7); }
+    html:not(.dark) .bg-dark-700 { background-color: #f3f4f6; }
+    html:not(.dark) .text-neutral-100 { color: #111827; }
+    html:not(.dark) .text-neutral-200 { color: #1f2937; }
+    html:not(.dark) .text-neutral-300 { color: #4b5563; }
+    html:not(.dark) .text-neutral-400 { color: #6b7280; }
+    html:not(.dark) .text-neutral-500 { color: #9ca3af; }
+    html:not(.dark) .border-dark-600 { border-color: #d1d5db; }
+    html:not(.dark) .border-dark-700 { border-color: #e5e7eb; }
+    html:not(.dark) .text-white { color: #111827; }
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-14">
+        <div class="flex items-center space-x-4">
+          <a href="../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
+            <span class="text-2xl">🎬</span>
+            <span class="font-bold text-lg hidden sm:inline">Sites 3D</span>
+          </a>
+          <span class="text-neutral-600 hidden sm:inline">|</span>
+          <a href="../index.html" class="text-neutral-400 hover:text-yellow-300 text-sm font-medium hidden md:inline">← Times de IA</a>
+        </div>
+        <div class="flex items-center space-x-1 sm:space-x-2">
+          <a href="../trilha1-skill-scroll/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Skill</span></a>
+          <a href="../trilha2-prompts-sites/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Pack I</span></a>
+          <a href="../trilha3-guia-prompting/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Guia</span></a>
+          <a href="../trilha4-prompts-espetaculos/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Pack II</span></a>
+          <a href="../trilha5-seedance/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Seedance</span></a>
+          <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2" aria-label="Alternar tema">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex items-center space-x-2 text-sm text-neutral-400">
+      <a href="../index.html" class="hover:text-amber-400">Início</a>
+      <span>/</span>
+      <a href="index.html" class="hover:text-amber-400">Trilha 4</a>
+      <span>/</span>
+      <span class="text-amber-400">Módulo 4.2</span>
+    </div>
+  </nav>
+
+  <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÓDULO 4.2 · TRILHA 4</span>
+      <h1 class="text-2xl sm:text-4xl font-bold mb-4 leading-tight">⚡ PROMPT 01 · A BALEIA · OBSCURA, a câmera mítica.</h1>
+      <p class="text-lg text-neutral-400 max-w-3xl">A do vídeo. Execute-a primeiro, exatamente como escrita, para ver o efeito completo antes de personalizar qualquer coisa.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">0</div>
+            <div class="text-xs text-neutral-400">Tópicos</div>
+          </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">6 min</div>
+            <div class="text-xs text-neutral-400">Leitura</div>
+          </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">Pack II</div>
+            <div class="text-xs text-neutral-400">Trilha</div>
+          </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+            <div class="text-xl font-bold text-amber-400">Prompts</div>
+            <div class="text-xs text-neutral-400">Formato</div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="leading-relaxed">
+<p class="text-neutral-300 mb-4 leading-relaxed">A do vídeo. Execute-a primeiro, exatamente como escrita, para ver o efeito completo antes de personalizar qualquer coisa.</p><p class="text-neutral-300 mb-4 leading-relaxed">You are building a one-page, award-grade "scroll cinematic" website to be judged against Awwwards-level work. Work autonomously end to end: generate the assets with the Higgsfield connector, then build and run   the site with your coding agent. Do not stop at a plan. Do not use placeholder assets.</p><p class="text-neutral-300 mb-4 leading-relaxed">THE PRODUCT (fictional luxury brand): OBSCURA MK I, a mythic mechanical camera. Matte black brass body, engraved dials, glass lens elements. Tagline: "Light, remembered." The site has one hero moment: as the visitor scrolls, the camera EXPLODES into roughly forty floating components (lens elements as glass discs, fanned iris blades, prism, shutter curtain, gears, screws), a prism splits white light into a spectral rainbow flare across the void, then scrolling onward REASSEMBLES it back into a whole camera.</p><p class="text-neutral-300 mb-4 leading-relaxed">THE TECHNIQUE (this is the secret, follow it exactly): The viral "3D scroll" effect is NOT Three.js and NOT WebGL. It is a canvas image-sequence scrub: short cinematic video clips are split into frames, and scroll position drives which frame is painted onto a full-viewport canvas. Smooth, deterministic, works everywhere.</p><p class="text-neutral-300 mb-4 leading-relaxed">ATIVOS (conector Higgsfield): 1. Gere UMA imagem âncora 16:9: "Ultra premium product photograph of a mythic mechanical camera, matte black metal with brass engraved dials and glass lens, floating centered in a pure black void, single dramatic top light, subtle gold rim light, photorealistic, luxury watch advertisement lighting, no text, no watermark." Use o melhor modelo de imagem atual no catálogo. 2. Usando essa âncora como referência de imagem em CADA clipe (isso trava a identidade do produto), gere três clipes de imagem-para-vídeo de 10 segundos, 1080p, 16:9, com o melhor modelo de imagem-para-vídeo atual: CLIP A "orbit": the camera floats in the black void and slowly rotates 360 degrees, gentle drift, nothing else moves. CLIP B "explode": the camera smoothly disassembles outward into its individual components which hang suspended in space, glass lens elements, fanned aperture blades, gears, dials, screws, a glass prism near the center splitting a beam of white light into a rainbow spectrum flare, slow, elegant, constant speed, ends fully exploded and holding. CLIP C "macro": slow macro glide across the engraved brass dial, over the glass lens with faint spectral refractions, ending on the OBSCURA engraving. A remontagem não precisa de clipe extra: rolar o CLIP B para trás É a remontagem. 3. Baixe os três MP4s para o projeto.</p><p class="text-neutral-300 mb-4 leading-relaxed">QUADROS: Use ffmpeg para extrair cada clipe em uma sequência JPEG: 150 quadros por clipe, 1600px de largura, qualidade 3, nomeados frames/orbit/frame_0001.jpg etc. Confirme a existência dos arquivos antes de escrever o código do site.</p><p class="text-neutral-300 mb-4 leading-relaxed">O SITE (HTML/CSS/JS puro, sem frameworks): index.html, styles.css, app.js. Carregador: tela preta, barra de progresso fina dourada e porcentagem que pré-carrega CADA quadro antes de desbloquear o scroll. Scroll suave: Lenis via CDN. Cada capítulo de arrasto é uma seção fixa de 100vh cujo progresso do scroll mapeia para sua sequência de quadros com suavização lerp, drawImage com matemática de ajuste cover. Estrutura: 1. HERO: orbit arrasta enquanto "OBSCURA" em uma grande serifa editorial desvanece e espaça as letras, sobrelinha "THE MK I. LIGHT, REMEMBERED." em maiúsculas pequenas com espaçamento. 2. MANIFESTO: texto poético curto, uma linha revelada por passo de scroll. 3. A EXPLOSÃO: clipe B arrasta para frente; quatro pequenos rótulos desvanecem perto dos componentes com linhas guia douradas finas (ELEMENT I: 9 lentes de vidro. IRIS: 12 lâminas. PRISM: espectro completo. 214 peças no total.) 4. REMONTAGEM: clipe B arrasta para trás, terminando com a linha "Every part, remembered." 5. MACRO: clipe C arrasta pelos detalhes. 6. ESPECIFICAÇÕES: grade minimalista de duas colunas com divisórias finas, especificações fictícias. 7. CTA: "Request the MK I", campo de e-mail, letra miúda. Direção de arte: fundo #050505, texto osso #EDEAE4, acento latão #B08D57, arco-íris espectral APENAS onde a luz do prisma aparece; display serif gigante (Cormorant Garamond) combinado com uma grotesca espaçada; enorme espaço negativo; sem caixas, sem cartões, sem sombras de projeção. Mobile e movimento reduzido: abaixo de 768px ou prefers-reduced-motion, substitua o arrasto no canvas pelos MP4s como vídeos de fundo em loop. Desempenho: requestAnimationFrame, repinte apenas quando o índice do quadro mudar, alvo 60fps.</p><p class="text-neutral-300 mb-4 leading-relaxed">VERIFICAR: abra o site servido e confirme que o carregador atinge 100 por cento e desbloqueia, todos os três capítulos de arrasto realmente arrastam, a remontagem reversa funciona, os rótulos aparecem, sem erros no console. Corrija o que estiver quebrado, depois me dê a URL ao vivo e um resumo dos ativos gerados e créditos gastos.</p>
+    </article>
+
+    <div class="mt-12 pt-8 border-t border-dark-600 flex flex-col sm:flex-row gap-4">
+      <a href="modulo-4-1.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Módulo 4.1</a>
+      <a href="modulo-4-3.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors">Módulo 4.3 →</a>
+    </div>
+  </main>
+  <footer class="border-t border-dark-600 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
+      <p>Sites 3D e Cinematográficos · Material educacional | <a href="https://inema.club" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p>
+    </div>
+  </footer>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+    const htmlEl = document.documentElement;
+    if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !htmlEl.classList.contains('dark'))) {
+      darkIcon.classList.remove('hidden'); htmlEl.classList.remove('dark');
+    } else { lightIcon.classList.remove('hidden'); }
+    themeToggle.addEventListener('click', () => {
+      darkIcon.classList.toggle('hidden'); lightIcon.classList.toggle('hidden');
+      htmlEl.classList.toggle('dark');
+      localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
